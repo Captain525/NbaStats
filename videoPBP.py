@@ -101,9 +101,7 @@ def getGameID(date, team_id):
 def accessPBP(game_id):
     """
     Gets to the play by play data from the given game id, currently gets the fourth play of the game, but cacn
-    cahnge that later.
-    :param game_id:
-    :return:
+    change that later.
     """
     from nba_api.stats.endpoints import playbyplayv2
     pbp = playbyplayv2.PlayByPlayV2(game_id)
@@ -117,7 +115,7 @@ def accessPBP(game_id):
     return pbp.loc[randomPlay, "EVENTNUM"]
 
 def main():
-    gameList = findGames("New York", None, None, '2015-16',None, None, None, None)
+    gameList = findGames("New York", None, None, '2021-22',None, None, None, None)
     print(gameList)
     from random import randint
     gameChosen = randint(0, len(gameList)-1)

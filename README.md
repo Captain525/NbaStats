@@ -62,3 +62,7 @@ EVENTMSGACTIONTYPE:
  72 miss putback layup. 
  1- miss jump shot. 
  
+ 
+ 
+ stats.nba.com/stats/{endpoint}/?{params}
+ 
